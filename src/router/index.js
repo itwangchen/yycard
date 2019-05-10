@@ -2,7 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import home from '@/components/home'
 import info from '@/components/info'
-
+import login from '@/components/login'
+import {
+  Message
+} from 'element-ui';
 Vue.use(Router)
 
 const router=new Router({
@@ -16,7 +19,12 @@ const router=new Router({
       path: '/info',
       name: 'info',
       component: info
-    }
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: login
+    },
   ],
   mode: 'history'
 }
@@ -38,10 +46,11 @@ const router=new Router({
 //       const token = localStorage.getItem('token')
 //       if (!token) {
 //           // 回到登录
-//           Message.warning('请先登录')
+//           // Message.warning('请先登录')
 //           router.push({
 //               name: 'login'
 //           })
+//           // alert('请先登录!')
 //           return
 //       }
 //       next()
