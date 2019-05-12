@@ -3,9 +3,9 @@ import Router from 'vue-router'
 import home from '@/components/home'
 import info from '@/components/info'
 import login from '@/components/login'
-import {
-  Message
-} from 'element-ui';
+// import {
+//   Message
+// } from 'element-ui';
 Vue.use(Router)
 
 const router=new Router({
@@ -25,9 +25,7 @@ const router=new Router({
       name: 'login',
       component: login
     },
-  ],
-  mode: 'history'
-}
+  ]}
 )
 // 路由、导航/守卫
 // 在路由配置生效之前 会先来到下面方法的cb

@@ -1,9 +1,9 @@
 // 开发Vue插件
 import axios from 'axios'
 
-import {
-    Message
-} from 'element-ui';
+// import {
+    // Message
+// } from 'element-ui';
 
 const MyHttpServer = {}
 MyHttpServer.install = (Vue) => {
@@ -35,7 +35,7 @@ MyHttpServer.install = (Vue) => {
             }
         } = response.data
         if (status !== 200 && status !== 201) {
-            Message.warning(msg)
+            // Message.warning(msg)
         }
 
 

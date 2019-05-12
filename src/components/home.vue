@@ -94,6 +94,7 @@
             </p>
           </div>
         </li>
+        <li><van-search placeholder="请输入搜索关键词" v-model="value" /></li>
         <li>
           <img src="../assets/images/1.jpg" alt="">
           <div class="goodsInfo">
@@ -305,7 +306,7 @@
     name: 'home',
     data() {
       return {
-
+        value:''
       }
     },
     mounted() {
