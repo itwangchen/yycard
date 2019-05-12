@@ -7,6 +7,18 @@ import router from './router'
 import 'vant/lib/index.css'
 import './assets/css/reset.css'
 import './assets/js/rem'
+import VIscroll from 'viscroll'
+
+// 可以在use的时候设置iscroll的参数
+Vue.use(VIscroll, {
+    mouseWheel: true,
+    click: false,
+    preventDefault: true,
+    tap: false,
+    bounce: false,
+    disableTouch: true
+})
+
 import MyHttpServer from './plugins/http.js'
 Vue.config.productionTip = false
 

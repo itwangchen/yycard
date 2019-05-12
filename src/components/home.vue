@@ -4,7 +4,7 @@
       <!-- <div class="bg_top"></div>
       <div class="bg_bottom"></div> -->
     </div>
-    <div class="main">
+    <div class="main" v-iscroll='iscrollConf'>
       <!-- 技师卡片 -->
       <div class="technicianCrad">
         <div class="top">
@@ -302,11 +302,23 @@
 
 <script>
   import $ from 'jquery'
+
+
   export default {
     name: 'home',
     data() {
       return {
-        value:''
+        value:'',
+        iscrollConf: {
+                mouseWheel: true,
+                vScrollbar: true,
+                click: true,
+                preventDefault: true,
+                tap: true,
+                bounce: false,
+                disableTouch: true
+            }
+ 
       }
     },
     mounted() {
