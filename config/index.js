@@ -6,21 +6,37 @@ const path = require('path')
 
 module.exports = {
   dev: {
-
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      "/api": {
+        "target": "http://yycms.test.yyhealth.com",
+        "changeOrigin": true,
+        "pathRewrite": {
+          "^/api": "" //api相当于一个别名，代指http://198.33.33.33:8000
+        }
+      }
+      // "/taokubuy": {
+      //   "target": "http://yycms.test.yyhealth.com",
+      //   "changeOrigin": true,
+      //   "pathRewrite": {
+      //     "^/api": "" //api相当于一个别名，代指http://198.33.33.33:8000
+      //   }
+      // }
+      
+
+    },
 
     // Various Dev Server settings
-    host: 'localhost', // can be overwritten by process.env.HOST
+    host: 'http://192.168.1.104', // can be overwritten by process.env.HOST
     port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
 
-    
+
     /**
      * Source Maps
      */

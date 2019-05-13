@@ -1,109 +1,163 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box !important;
 }
-ul,ol{
-    list-style:none;
+
+ul,
+ol {
+  list-style: none;
 }
 
 a {
-    text-decoration:none;
-	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-	-webkit-user-select: none;
-	-moz-user-focus: none;
-    -moz-user-select: none;
-}
-html{
-    -ms-text-size-adjust:none;
-    -webkit-text-size-adjust:none;
-    text-size-adjust:none;
-}
-body{
-    line-height:1.5;
-     font-size:14px;
-    }
-body,button,input,select,textarea{
-    font-family:'helvetica neue',tahoma,'hiragino sans gb',stheiti,'wenquanyi micro hei',\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-user-select: none;
+  -moz-user-focus: none;
+  -moz-user-select: none;
 }
 
-b,strong{
-    font-weight:bold;
+html {
+  -ms-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
-i,em{
-    font-style:normal;
+
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'helvetica neue', tahoma, 'hiragino sans gb', stheiti, 'wenquanyi micro hei', \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, sans-serif;
 }
-table{
-    border-collapse:collapse;
-    border-spacing:0;
+
+b,
+strong {
+  font-weight: bold;
 }
-table th,table td{
-    border:1px solid #ddd;
-    padding:5px;
+
+i,
+em {
+  font-style: normal;
 }
-table th{
-    font-weight:inherit;
-    border-bottom-width:2px;
-    border-bottom-color:#ccc;
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-img{
-    border:0 none;
-    width:auto;
-    max-width:100%;
-    /*vertical-align:top; */
-    height:auto;
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 5px;
 }
-button,input,select,textarea{
-    font-family:inherit;
-    font-size:100%;
-    margin:0;
-    vertical-align:baseline;
+
+table th {
+  font-weight: inherit;
 }
-button,html input[type="button"],input[type="reset"],input[type="submit"]{
-    -webkit-appearance:button;cursor:pointer;
+
+img {
+  border: 0 none;
+  width: auto;
+  max-width: 100%;
+  /*vertical-align:top; */
+  height: auto;
 }
-button[disabled],input[disabled]{
-    cursor:default;
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
 }
-input[type="checkbox"],input[type="radio"]{
-    box-sizing:border-box;padding:0;
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
 }
-input[type="search"]{
-    -webkit-appearance:textfield;
-    -moz-box-sizing:content-box;
-    -webkit-box-sizing:content-box;
-    box-sizing:content-box;
+
+button[disabled],
+input[disabled] {
+  cursor: default;
 }
-input[type="search"]::-webkit-search-decoration{
-    -webkit-appearance:none;
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
 }
-input:focus{
-    outline:none;
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
 }
-select[size],select[multiple],select[size][multiple]{
-    border:1px solid #AAA;
-    padding:0;
+
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
 }
-article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{
-    display:block;
+
+input:focus {
+  outline: none;
 }
-audio,canvas,video,progress{
-    display:inline-block;
+
+select[size],
+select[multiple],
+select[size][multiple] {
+  border: .1rem solid #AAA;
+  padding: 0;
 }
-body{
-    background:#fff;
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
 }
+
+audio,
+canvas,
+video,
+progress {
+  display: inline-block;
+}
+
+body {
+  background: #fff;
+}
+
 input::-webkit-input-speech-button {
-    display: none
+  display: none
 }
-button,input,textarea{
--webkit-tap-highlight-color: rgba(0,0,0,0);
+
+button,
+input,
+textarea {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-.clear:after{
-    content: '';
-    display: block;
-    clear: both;
+
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
 }
-.clear{
-    zoom: 1;
+
+.clear {
+  zoom: 1;
 }

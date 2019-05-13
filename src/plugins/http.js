@@ -8,7 +8,7 @@ import axios from 'axios'
 const MyHttpServer = {}
 MyHttpServer.install = (Vue) => {
     // 统一配置baseUrl
-    axios.defaults.baseURL = 'http://localhost:8888/api/private/v1/'
+    axios.defaults.baseURL = 'http://www.yycms.com/admin'
     // 添加请求拦截器
     // 在发送请求之前 会先来到下面的cb
     axios.interceptors.request.use(function(config) {
