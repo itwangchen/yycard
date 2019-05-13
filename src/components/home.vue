@@ -88,12 +88,16 @@ export default {
     })
   },
   created() {
-    // this.$http.get('http://yycms.test.yyhealth.com/admin/memberLs/getUserInfo',function(res){
+    // this.$http.get('admin/memberLs/getUserInfo',function(res){
     //   console.log(res);      
     // });
-   axios.get('/api/admin/memberLs/getUserInfo',function(res){
+   axios.get('/memberLs/getUserInfo',function(res){
       console.log(res);      
     });
+    // location.href="http://yycms.test.yyhealth.com/admin/memberLs/getUserInfo"
+  //  axios.get('/memberLs/getUserInfo',function(res){
+  //     console.log(res);      
+  //   });
   },
   methods: {
     tag() {

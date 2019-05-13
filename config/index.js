@@ -14,7 +14,7 @@ module.exports = {
         "target": "http://yycms.test.yyhealth.com",
         "changeOrigin": true,
         "pathRewrite": {
-          "^/api": "" //api相当于一个别名，代指http://198.33.33.33:8000
+          "^/api": "/admin" //api相当于一个别名，代指http://198.33.33.33:8000
         }
       }
       // "/taokubuy": {
@@ -29,7 +29,8 @@ module.exports = {
     },
 
     // Various Dev Server settings
-    host: 'http://192.168.1.104', // can be overwritten by process.env.HOST
+    host: '0.0.0.0', // can be overwritten by process.env.HOST
+    // host: 'http://192.168.1.104', // can be overwritten by process.env.HOST
     port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
